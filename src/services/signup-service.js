@@ -4,7 +4,7 @@ export const signupHandler = async (username, number, email, password) => {
   try {
     console.log(username, number, email, password)
     const data = await axios.post(
-      "http://localhost:3500/api/auth/register",
+      "https://travelappbackend-dnmq.onrender.com/api/auth/register",
       {
         username: username,
         number: number,
